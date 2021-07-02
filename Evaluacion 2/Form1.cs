@@ -32,12 +32,21 @@ namespace Evaluacion_2
             estudiantes.Nota3 = Convert.ToDouble(Nota3textBox.Text);
             estudiantes.Nota4 = Convert.ToDouble(Nota4textBox.Text);
 
-            double PromedioFinal = estudiantes.DevolverPromedio(Convert.ToDouble(Nota1textBox.Text), Convert.ToDouble(Nota2textBox.Text), Convert.ToDouble(Nota3textBox.Text), Convert.ToDouble(Nota4textBox.Text));
-            PromediotextBox.Text = PromedioFinal.ToString();
+
+            MessageBox.Show("El promedio del estudiante es: " + "" + estudiantes.DevolverPromedio() + " y " + " " + estudiantes.aproboOreprobo());
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
+        private void button3_Click(object sender, EventArgs e)
         {
+            NombretextBox.Clear();
+            CuentatextBox.Clear();
+            Nota1textBox.Clear();
+            Nota2textBox.Clear();
+            Nota3textBox.Clear();
+            Nota4textBox.Clear();
+            
         }
     }
 }

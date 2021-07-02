@@ -32,13 +32,29 @@ namespace Evaluacion_2
         }
 
         //Metodos
-        public double DevolverPromedio(double nota1, double nota2, double nota3, double nota4)
+        public double DevolverPromedio()
         {
-            return (nota1 + nota2 + nota3 + nota4) / 4;
+            double prom;
+            prom = (Nota1 + Nota2 + Nota3 + Nota4) / 4;
+            return prom;
             
         }
 
+        public string aproboOreprobo()
+        {
+            double prom;
+            prom = (Nota1 + Nota2 + Nota3 + Nota4) / 4;
+            if (prom < 69 ) 
+            {
+                return ("Reprobo");
+            }
+            else
+            {
+                return ("Aprobo");
+            }
+           
 
+        }
 
     }
 }
